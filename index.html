@@ -8,20 +8,20 @@
   </head>
   <body class="bg-orange-300 h-screen flex items-center justify-center">
     <!-- Calculator Container -->
-    <div class="calculator bg-white shadow-lg rounded-lg p-6 w-80">
+    <div id="calculator" class="bg-white shadow-lg rounded-lg p-6 w-80">
       <!-- Display -->
       <div class="bg-transparent p-4 rounded-lg mb-4 text-right">
-        <div class="calculation text-gray-900 text-lg">500 + 300</div>
-        <div class="result text-4xl font-bold text-gray-900">800</div>
+        <div id="calculation " class="text-gray-900 text-lg">400 + 300</div>
+        <div id="result" class="text-4xl font-bold text-gray-900">800</div>
       </div>
 
       <!-- Buttons Grid -->
       <div class="grid grid-cols-4 gap-4">
         <!-- Row 1 -->
-        <button class="calc-btn bg-gray-200">+</button>
-        <button class="calc-btn bg-gray-200">-</button>
-        <button class="calc-btn bg-gray-200">x</button>
-        <button class="calc-btn bg-gray-200">/</button>
+        <button class="calc-btn bg-orange-400 text-white">+</button>
+        <button class="calc-btn bg-orange-400 text-white">-</button>
+        <button class="calc-btn bg-orange-400 text-white">x</button>
+        <button class="calc-btn bg-orange-400 text-white">/</button>
 
         <!-- Row 2 -->
         <button class="calc-btn bg-gray-200">7</button>
@@ -42,8 +42,23 @@
         <button class="calc-btn bg-gray-200 row-start-5">0</button>
         <button class="calc-btn bg-gray-200 row-start-5">.</button>
         <button class="calc-btn bg-gray-200 row-start-5">C</button>
-        <button class="calc-btn bg-gray-200 row-span-4 col-start-4">=</button>
+        <button
+          class="calc-btn bg-orange-400 text-white row-span-4 col-start-4"
+        >
+          =
+        </button>
       </div>
     </div>
+
+    <style>
+      /* Calculator button styles */
+      .calc-btn {
+        padding: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+    </style>
   </body>
 </html>
