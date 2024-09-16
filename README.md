@@ -15,6 +15,10 @@ Welcome to the Simple Calculator App! This project is a functional and user-frie
 - **TailWind**: For styling the calculator and making the UI visually appealing.
 - **JavaScript**: For implementing the calculator logic and handling user interactions.
 
+## Live Demo
+
+You can view the live project deployed on GitHub Pages [here](https://kenvastolord.github.io/Simple_calculator_app/).
+
 ## Screenshots
 
 ![Calculator Screenshot](assets/calculator.gif)
