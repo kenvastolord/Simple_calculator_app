@@ -17,7 +17,7 @@ Welcome to the Simple Calculator App! This project is a functional and user-frie
 
 ## Screenshots
 
-<img src="https://github.com/kenvastolord/simple-calculator-app/assets/calculator.gif" alt="Calculator Screenshot" width="400" height="auto" />
+![Calculator Screenshot](assets/calculator.gif)
 
 ## Getting Started
 
@@ -25,14 +25,15 @@ Welcome to the Simple Calculator App! This project is a functional and user-frie
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/your-username/simple-calculator-app.git
-   ```
+   ````bash
+   git clone https://github.com/kenvastolord/Simple_calculator_app   ```
+
+   ````
 
 2. **Navigate to the Project Directory**
 
 ```bash
-  cd simple-calculator-app
+  cd Simple_calculator_app
 ```
 
 ## Usage
