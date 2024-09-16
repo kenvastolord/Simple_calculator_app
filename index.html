@@ -11,17 +11,31 @@
     <div id="calculator" class="bg-white shadow-lg rounded-lg p-6 w-80">
       <!-- Display -->
       <div class="bg-transparent p-4 rounded-lg mb-4 text-right">
-        <div id="calculation " class="text-gray-900 text-lg">400 + 300</div>
-        <div id="result" class="text-4xl font-bold text-gray-900">800</div>
+        <div id="calculation" class="text-gray-900 text-lg">0</div>
+        <div id="result" class="text-4xl font-bold text-gray-900">0</div>
       </div>
 
       <!-- Buttons Grid -->
       <div class="grid grid-cols-4 gap-4">
         <!-- Row 1 -->
-        <button class="calc-btn bg-orange-400 text-white">+</button>
-        <button class="calc-btn bg-orange-400 text-white">-</button>
-        <button class="calc-btn bg-orange-400 text-white">x</button>
-        <button class="calc-btn bg-orange-400 text-white">/</button>
+        <button class="calc-btn bg-orange-400 text-white" data-action="add">
+          +
+        </button>
+        <button
+          class="calc-btn bg-orange-400 text-white"
+          data-action="subtract"
+        >
+          -
+        </button>
+        <button
+          class="calc-btn bg-orange-400 text-white"
+          data-action="multiply"
+        >
+          x
+        </button>
+        <button class="calc-btn bg-orange-400 text-white" data-action="divide">
+          /
+        </button>
 
         <!-- Row 2 -->
         <button class="calc-btn bg-gray-200">7</button>
@@ -41,9 +55,12 @@
         <!-- Row 5 -->
         <button class="calc-btn bg-gray-200 row-start-5">0</button>
         <button class="calc-btn bg-gray-200 row-start-5">.</button>
-        <button class="calc-btn bg-gray-200 row-start-5">C</button>
+        <button class="calc-btn bg-gray-200 row-start-5" data-action="clear">
+          C
+        </button>
         <button
           class="calc-btn bg-orange-400 text-white row-span-4 col-start-4"
+          data-action="equal"
         >
           =
         </button>
@@ -60,5 +77,7 @@
         font-weight: bold;
       }
     </style>
+
+    <script src="script.js"></script>
   </body>
 </html>
