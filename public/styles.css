@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calc-btn {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body class="bg-orange-300 h-screen flex items-center justify-center">
+    <!-- Calculator Container -->
+    <div id="calculator" class="bg-white shadow-lg rounded-lg p-6 w-80">
+      <!-- Display -->
+      <div class="bg-transparent p-4 rounded-lg mb-4 text-right">
+        <div id="calculation" class="text-gray-900 text-lg">0</div>
+        <div id="result" class="text-4xl font-bold text-gray-900">0</div>
+      </div>
+
+      <!-- Buttons Grid -->
+      <div class="grid grid-cols-4 gap-4">
+        <!-- Row 1 -->
+        <button class="calc-btn bg-orange-400 text-white" data-action="add">
+          +
+        </button>
+        <button
+          class="calc-btn bg-orange-400 text-white"
+          data-action="subtract"
+        >
+          -
+        </button>
+        <button
+          class="calc-btn bg-orange-400 text-white"
+          data-action="multiply"
+        >
+          x
+        </button>
+        <button class="calc-btn bg-orange-400 text-white" data-action="divide">
+          /
+        </button>
+
+        <!-- Row 2 -->
+        <button class="calc-btn bg-gray-200">7</button>
+        <button class="calc-btn bg-gray-200">8</button>
+        <button class="calc-btn bg-gray-200">9</button>
+
+        <!-- Row 3 -->
+        <button class="calc-btn bg-gray-200 row-start-3">4</button>
+        <button class="calc-btn bg-gray-200 row-start-3">5</button>
+        <button class="calc-btn bg-gray-200 row-start-3">6</button>
+
+        <!-- Row 4 -->
+        <button class="calc-btn bg-gray-200 row-start-4">1</button>
+        <button class="calc-btn bg-gray-200 row-start-4">2</button>
+        <button class="calc-btn bg-gray-200 row-start-4">3</button>
+
+        <!-- Row 5 -->
+        <button class="calc-btn bg-gray-200 row-start-5">0</button>
+        <button class="calc-btn bg-gray-200 row-start-5">.</button>
+        <button class="calc-btn bg-gray-200 row-start-5" data-action="clear">
+          C
+        </button>
+        <button
+          class="calc-btn bg-orange-400 text-white row-span-4 col-start-4"
+          data-action="equal"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
